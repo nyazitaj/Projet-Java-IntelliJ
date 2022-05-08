@@ -1,6 +1,5 @@
 package com.edu.mns.control.dfs.dfsrcontrol.model;
 
-import com.fasterxml.jackson.annotation.JsonView;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;

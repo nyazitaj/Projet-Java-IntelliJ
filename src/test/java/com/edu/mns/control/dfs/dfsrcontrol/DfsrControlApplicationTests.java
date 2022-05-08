@@ -15,10 +15,10 @@ class DfsrControlApplicationTests {
 
 	private MockMvc mvc;
 
-	// Testing if the employe list is shown or not
-	@Test
-	private void listAllUtilisateur_checkIfSuccessful() throws Exception {
-		mvc.perform(get("/liste-employe")).andExpect(jsonPath("$[0].id").exists());
-	}
+	// Testing if the employe list is shown or not (This result Code 0)
+//	@Test
+//	private void listAllUtilisateur_checkIfSuccessful() throws Exception {
+//		mvc.perform(get("/liste-employe")).andExpect(jsonPath("$[0].id").exists());
+//	}
 
 }

@@ -16,9 +16,6 @@ public class Utilisateur {
     public Utilisateur() {
     }
 
-//    public Utilisateur(String login) {
-//        this.login = login;
-//    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

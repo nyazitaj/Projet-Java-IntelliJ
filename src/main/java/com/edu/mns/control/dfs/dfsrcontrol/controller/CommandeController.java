@@ -2,20 +2,16 @@ package com.edu.mns.control.dfs.dfsrcontrol.controller;
 
 import com.edu.mns.control.dfs.dfsrcontrol.dao.CommandeDao;
 import com.edu.mns.control.dfs.dfsrcontrol.dao.UtilisateurDao;
-import com.edu.mns.control.dfs.dfsrcontrol.model.Commande;
-import com.edu.mns.control.dfs.dfsrcontrol.model.Utilisateur;
 import com.edu.mns.control.dfs.dfsrcontrol.view.AffichageCommande;
 import com.fasterxml.jackson.annotation.JsonView;
-import com.fasterxml.jackson.annotation.ObjectIdGenerator;
-import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.lang.model.type.ArrayType;
-import java.sql.Array;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 @RestController
 @CrossOrigin
@@ -54,23 +50,6 @@ public class CommandeController {
         this.commandeList.clear();
         this.listeLigneCommande.clear();
         this.commandeHashMap.clear();
-
-//        this.articlePrix.put("prix", 4);
-//        this.listeLigneCommandeElem.put("quantite", this.commandeDao.quantityCommande());
-//        this.listeLigneCommandeElem.put( "article", this.articlePrix );
-//
-//        this.listeLigneCommande.add(this.listeLigneCommandeElem);
-//
-//        this.commandeHashMap.put( "listeLigneCommande", this.listeLigneCommande );
-//
-//        this.client.put("login", true);
-
-//        this.commandeHashMap.put( "client", this.client );
-//
-//        this.commandeList.add(this.commandeHashMap);
-//
-//        return this.commandeList;
-
 
         for(Object param: this.commandeDao.commandes()) {
 

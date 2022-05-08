@@ -1,15 +1,10 @@
 package com.edu.mns.control.dfs.dfsrcontrol.controller;
 
-import com.edu.mns.control.dfs.dfsrcontrol.dao.CommandeDao;
 import com.edu.mns.control.dfs.dfsrcontrol.dao.UtilisateurDao;
-import com.edu.mns.control.dfs.dfsrcontrol.model.Commande;
-import com.edu.mns.control.dfs.dfsrcontrol.model.Utilisateur;
 import com.edu.mns.control.dfs.dfsrcontrol.view.AffichageUtilisateur;
 import com.fasterxml.jackson.annotation.JsonView;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @CrossOrigin
