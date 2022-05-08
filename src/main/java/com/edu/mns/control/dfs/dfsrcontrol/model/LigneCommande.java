@@ -15,7 +15,7 @@ public class LigneCommande {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String commande_id;
-    private  String article_id;
-    private  String quantite;
+    private Integer commande_id;
+    private  Integer article_id;
+    private  Integer quantite;
 }

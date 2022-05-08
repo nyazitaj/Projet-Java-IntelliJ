@@ -15,6 +15,6 @@ public class Employe {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String administrateur;
+    private boolean administrateur;
 
 }

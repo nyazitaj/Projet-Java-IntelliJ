@@ -6,6 +6,7 @@ import lombok.Setter;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
 @EntityListeners(AuditingEntityListener.class)
@@ -24,6 +25,6 @@ public class Commande {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private String date_paiement;
-    private  String client_id;
+    private Date date_paiement;
+    private  Integer client_id;
 }

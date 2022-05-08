@@ -13,7 +13,7 @@ VALUES ("GRÖNLID",19.0, 3),("HEMNES",34.0, 4),("EKTORP",32.0, 3),("LINANÄS",49
 INSERT INTO caracteristique (article_id, propriete_id, valeur) VALUES (1,1,200),(1,2,300),(2,1,50);
 
 INSERT INTO commande (date_paiement, client_id)
-VALUES ("2022-05-20",3), ("2022-03-15",1), ("2022-07-14",2), ("2022-05-01",1);
+VALUES ("2022-01-02",3);
 
 INSERT INTO ligne_commande (commande_id,article_id, quantite)
 VALUES (1,1,5),(1,2,3);

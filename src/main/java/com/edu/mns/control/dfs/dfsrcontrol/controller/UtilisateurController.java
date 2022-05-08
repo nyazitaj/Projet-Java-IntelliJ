@@ -18,9 +18,7 @@ public class UtilisateurController {
 
     @Autowired
     public UtilisateurController(UtilisateurDao utilisateurDao) {
-
         this.utilisateurDao = utilisateurDao;
-
     }
 
     // Total Users
@@ -32,21 +30,13 @@ public class UtilisateurController {
 
     }
 
-    // Total administrator
-    @GetMapping("/compte-administrateur")
-    @JsonView(AffichageUtilisateur.class)
-    public Integer compteAdministrator() {
-
-        return utilisateurDao.compteAdministrator();
-
-    }
-
 
     // Delete a user
     @DeleteMapping("/utilisateur/{id}")
     @JsonView(AffichageUtilisateur.class)
     public String supprimeUtilisateur( @PathVariable int id ) {
 
+        // utilisateurDao.supprimeUtilisateur(id);
         utilisateurDao.deleteById(id);
         return "Supprimé";
 

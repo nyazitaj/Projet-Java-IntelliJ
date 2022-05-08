@@ -12,8 +12,8 @@ public interface UtilisateurDao extends JpaRepository<Utilisateur, Integer> {
     @Query("SELECT COUNT(*) FROM Utilisateur")
     Integer compteUtilisateur();
 
-
-    @Query("SELECT COUNT(E.administrateur) FROM Employe E WHERE E.administrateur = 1")
-    Integer compteAdministrator();
+    // @Query("DELETE FROM Utilisateur U INNER JOIN Employe E ON E.id != U.id WHERE U.id=:id")
+    @Query("DELETE FROM Utilisateur U WHERE NOT U.id IN (FROM Employe E WHERE E.id=:id) AND U.id=:id")
+    String supprimeUtilisateur(Integer id);
 
 }
