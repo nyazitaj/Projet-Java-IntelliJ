@@ -1,6 +1,5 @@
 package com.edu.mns.control.dfs.dfsrcontrol.dao;
 
-import com.edu.mns.control.dfs.dfsrcontrol.model.Article;
 import com.edu.mns.control.dfs.dfsrcontrol.model.Employe;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

@@ -1,6 +1,6 @@
 package com.edu.mns.control.dfs.dfsrcontrol.model;
 
-import com.edu.mns.control.dfs.dfsrcontrol.view.AffichageUtilisateur;
+import com.edu.mns.control.dfs.dfsrcontrol.view.AffichageCommande;
 import com.fasterxml.jackson.annotation.JsonView;
 import lombok.Getter;
 import lombok.Setter;
@@ -16,10 +16,12 @@ public class Article {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @JsonView(AffichageUtilisateur.class)
     private Integer id;
-    @JsonView(AffichageUtilisateur.class)
+
     private String nom;
-    private  Integer prix;
-    private  Integer gestionnaire_id = 4;
+
+    @JsonView(AffichageCommande.class)
+    public  float prix;
+
+    private  Integer gestionnaire_id;
 }

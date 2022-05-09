@@ -31,7 +31,6 @@ public class UtilisateurController {
     @JsonView(AffichageUtilisateur.class)
     public String supprimeUtilisateur( @PathVariable int id ) {
 
-        // utilisateurDao.supprimeUtilisateur(id);
         utilisateurDao.deleteById(id);
         return "Supprimé";
 

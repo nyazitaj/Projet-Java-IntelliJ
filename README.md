@@ -6,7 +6,7 @@ This project is made during the **Metz-Numeric-Shcool** training by **[Taj Nyazi
 
 
 Here is the list of all possible URL with this API:
-  1. `http://localhost:8085/liste-commande` (**Http method: GET**, Display JSON but is not completed this one)
+  1. `http://localhost:8085/liste-commande` (**Http method: GET**, Displays orders list with their informations, products sold, sales)
   2. `http://localhost:8085/article` (**Http method: POST**, To create an article)
   3. `http://localhost:8085/employe/3` (**Http method: GET**, To get an employe by its ID)
   4. `http://localhost:8085/liste-employe` (**Http method: GET**, To get a list of all employes)
