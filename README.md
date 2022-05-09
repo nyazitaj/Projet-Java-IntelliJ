@@ -15,3 +15,9 @@ Here is the list of all possible URL with this API:
   7. `http://localhost:8085/utilisateur/2` (**Http method: DELETE**, To delete a user by its ID (not an employe))
   8. Test created for `http://localhost:8085/liste-employe`
 
+
+## Screenshot:
+
+
+![](/screenshot.png)
+
